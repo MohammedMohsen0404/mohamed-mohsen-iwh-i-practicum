@@ -1,0 +1,20 @@
+html
+  head
+    title #{title}
+  body
+    h1 Add New Pet
+    form(action='/update-cobj' method='POST')
+      label(for='name') Name:
+      input(type='text' id='name' name='name' required)
+
+      label(for='age') Age:
+      input(type='number' id='age' name='age' required)
+
+      label(for='type') Type:
+      input(type='text' id='type' name='type' required)
+
+      label(for='bio') Bio:
+      textarea(id='bio' name='bio' required)
+
+      button(type='submit') Add Pet
+    a(href='/') Return to Homepage
